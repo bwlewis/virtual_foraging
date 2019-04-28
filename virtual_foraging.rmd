@@ -235,15 +235,17 @@ bounty = bounty[round(bounty$lat) != 0 & round(bounty$lon != 0), ]
 ```
 
 ```{r}
-pal = c(January="#555555", February="#ffff00", March="#000000", April="#0000ff",
-        May="#00aa00", June="#ff9900", July="#00ffff", August="#ff00ff",
-        September="#55aa11", October="#aa9944", November="#77ffaa", December="#ccaa99")
-clr = as.vector(pal[bounty$month])
+colors = c(January="#555555", February="#ffff00", March="#000000",
+           April="#0000ff", May="#00aa00", June="#ff9900", July="#00ffff",
+           August="#ff00ff", September="#55aa11", October="#aa9944",
+           November="#77ffaa", December="#ccaa99")
+clr = as.vector(colors[bounty$month])
 map = addTiles(leaflet())
 map = addCircleMarkers(map, data=bounty, lng=~lon, lat=~lat, fillOpacity=0.6,
          stroke=FALSE, fillColor=clr, label=~label, popup=~pic)
-map = addLegend(map, position="bottomright", colors=unique(clr),
-        labels=unique(names(pal)[bounty$month]), title="Month", opacity=1)
+i = sort(unique(bounty$month))
+map = addLegend(map, position="bottomright", colors=colors[i],
+        labels=names(colors)[i], title="Month", opacity=1)
 map
 ```
 Click on the points to see their associated pictures...
