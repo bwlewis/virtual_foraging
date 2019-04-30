@@ -39,9 +39,7 @@ so eventually even that 1% can be interesting to look at...
 Our virtual mushroom foray begins as any real-world foray does, looking around
 for mushrooms! But instead of a forest, we'll use the internet. In particular,
 Let's ask popular search engines to search for images of morels, and then
-inspect those images for GPS coordinates. As you can imagine, most morel
-hunters are secretive about their foraging and strip GPS coordinates from their
-images...
+inspect those images for GPS coordinates.
 
 But how can we ask internet search engines to return image information directly
 to R?  Unfortunately, the main image search engines like Google and Bing today
@@ -58,8 +56,8 @@ at any time instead of something well-organized like HTML, but we
 seem to be forced into this approach by the modern internet.
 
 Our hunt requires that the Google chrome browser is installed on your
-system[^google], and of course R! You'll need at least the following
-R packages installed. If you don't have them, install them from CRAN:
+system[^google], and of course you'll need R! You'll need at least the
+following R packages installed. If you don't have them, install them from CRAN:
 ```{r}
 library(wdman)
 library(RSelenium)
@@ -253,18 +251,18 @@ Click on the points to see their associated pictures...
 
 ## Closing Notes
 
-You may have noticed that not all of the pictures are of morels! Indeed,
-there are several group foray pictures, a picture of a deer, and several
-pictures of false morel mushrooms!
+You may have noticed that not all of the pictures are of morels. Indeed,
+there are several foray group photos, a picture of a deer, and even a few
+pictures of (poisonous) *false morel* mushrooms.
 
-What could be done about that? Well, if you are truly geeky and somewhat bored,
-you could train a deep neural network to identify morels, and then feed these
-results into that. Me, I prefer wasting my time wandering actual woods looking
-for interesting mushrooms... It's also worth pointing out that the false morel
-and morel habitats are often quite similar so those false morel sightings
-spotted in the map above might actually be interesting places to forage!
-
-
+What could be done about that? Well, if you are truly geeky and somewhat
+bored--OK very bored, you could train a deep neural network to identify morels,
+and then feed the above image results into that. Me, I prefer wasting my time
+wandering actual woods looking for interesting mushrooms... Even if there are
+no morels to find, wandering in the woods is almost always fun. It's also worth
+pointing out that the false morel and morel habitats are often quite similar so
+those false morel sightings spotted in the map above might actually be
+interesting places to forage.
 
 
 
