@@ -9,6 +9,4 @@ markdown settings to `{r, eval=TRUE}` to generate your own output
 markdown file, or simply copy and paste the R code and evaluate it in
 an R session.
 
-The picture of morels, `morchella-americana.jpg` is copyright 2018 by
-Walt Sturgeon of the Ohio Mushroom Society, see
-https://ohiomushroomsociety.wordpress.com/.
+I took the morel photo in April, 2019 somewhere in Ohio...
