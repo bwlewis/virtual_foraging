@@ -1,6 +1,7 @@
+
 <img src="morchella-americana.jpg" width="600" height="600"/>
 <br/>
-Morchella Americana by Walt Sturgeon, see https://ohiomushroomsociety.wordpress.com/
+Morchella Americana by Bryan W. Lewis, see https://ohiomushroomsociety.wordpress.com/
 
 # Virtual Morel Foraging with R
 
